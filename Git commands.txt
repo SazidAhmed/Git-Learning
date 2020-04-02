@@ -1,0 +1,97 @@
+make a folder open it with gitbash
+make some files using touch index.html
+git init
+
+add email and name
+git config --global user.name 'Sazid Ahmed'
+git config --global user.email 'sazidahmed.official@gmail.com'
+
+to add a file
+git add index.html
+
+to check status
+git status
+
+To remove the file
+git rm --cached index.html
+
+to add all the html files
+git add *.html
+
+to add every file
+git add .
+
+if we change anything we can see the status
+git status
+
+then we have to commite using
+git add .
+
+git commit
+it will open a vim editor
+press "I" for insert mode
+to get out of here press esc:wq and enter
+
+to skip the vim we can use
+git add .
+git commit -m 'changed app.js'
+
+......GIT IGNORE..........................
+
+touch .gitignore
+now write the file name in it to ignore
+
+we can also add a folder
+in gitignore add the folder name with a slash
+/dir2
+to ignore all files like html css js or text file
+*txt *html
+git add .
+git status
+
+before move to another brance commit changes
+git commit - m 'another change'
+
+......Branch...........................
+To create a new branch
+git branch login
+
+to switch the branch
+git checkout 'login'
+ //login is the branch name
+
+make a new files
+
+git add .
+git commit -m 'login form'
+
+git checkout master
+
+to merge other files
+git merge login
+
+.....Remote Repository......
+
+go to github.com
+
+create new repository
+
+add the link in command line
+git remote add origin https://github.com/SazidAhmed/learning-git.git
+
+git remote
+git push -u origin master
+
+To add readme.md
+touch README.md
+git add .
+git commit -m 'added readme'
+
+to upload the file
+git push
+
+To download the file clone 
+ git clone https://github.com/SazidAhmed/learning-git.git
+
+git pull
+
